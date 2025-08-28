@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  
+
+  
+  
+    <title>Sold Out</title>
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=gotham&display=swap" rel="stylesheet">
+    <!--Stylesheets-->
+    <style media="screen">
+    	*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 20px;
+    box-sizing: border-box; 
+    color: #FFFFFF;
+}
+body{
+    background-color: auto;
+}
+.popupsoldout{
+    background-color: #341E66;
+    border-style: solid;
+    border-width: 10px;
+    border-color: #FFAA00;
+    width: 800px;
+    height: 600px;
+    padding: 30px 40px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    border-radius: 8px;
+    font-family: "gotham",book;
+    display: none; 
+    text-align: center;
+    font-size: 35px
+}
+.popupsoldout button{
+    display: block;
+    margin:  0 0 20px auto;
+    background-color: transparent;
+    font-size: 30px;
+    color: #ffffff;
+		background: #03549a;
+		border-radius: 100%;
+		width: 40px;
+		height: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: px
+}
+.popupsoldout h2{
+	margin-top: -20px;
+}
+.popupsoldout p{
+    font-size: 20px;
+    text-align: center;
+    margin: 20px 0;
+    line-height: 25px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="popupsoldout">
+        <button id="close">&times;</button>
+        <h2>SOLD OUT</h2>
+        <center><p>
+            Muchas gracias por tu interés en nuestro programa de Entrenamiento de Fabricantes.</p>
+
+<p>Nuestro cupo se encuentra lleno para el programa en InfoComm América Latina 2025; pero puedes formar parte para nuestra edición 2026.</p>
+
+<p>¡Únete a nuestra lista de espera enviando un correo electrónico a Renata Mérida (rmerida@avixa.org)!</p>
+          <img src=https://cdn.asp.events/CLIENT_InfoComm_807A12DE_5056_B731_4C911D504F318565/sites/ICAL2025_ES/media/branding/logo_InfoCommLatam.png class="imagen-escalada">
+
+<style>
+  .imagen-escalada {
+    width: 50%; /* Escala al 50% del contenedor */
+    height: auto; /* Mantiene la proporción */
+  }
+</style>
+    <!--Script-->
+    <script type="text/javascript">
+window.addEventListener("load", function(){
+    setTimeout(
+        function open(event){
+            document.querySelector(".popupsoldout").style.display = "block";
+        },
+        2000 
+    )
+});
+
+
+document.querySelector("#close").addEventListener("click", function(){
+    document.querySelector(".popupsoldout").style.display = "none";
+});
+    </script>
+</body>
+</html>
